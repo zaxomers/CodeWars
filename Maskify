@@ -1,0 +1,16 @@
+def maskify(cc):
+    CC=[]
+    if isinstance(cc, int):
+        cc= str(cc)
+    length = len(cc)
+    if length >=4: 
+        for i in range(length-4):
+            CC.append('#')
+        CC.append(cc[-4:])
+        r = (''.join(CC))
+        print(r)
+    else:
+        r = cc
+        print(cc)
+    
+    return r
